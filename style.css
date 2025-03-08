@@ -1,0 +1,51 @@
+/* Slider Image Customization */
+#restaurantCarousel img {
+    height: 500px; /* تصویر کی اونچائی */
+    object-fit: cover; /* تصویر فٹ کرنے کے لیے */
+    border-radius: 10px;
+}
+.menu-img {
+    width: 100%;  /* ہر تصویر کو اس کے column کے مطابق مکمل چوڑائی دے گا */
+    height: 200px; /* تمام تصاویر کی ایک جیسی اونچائی سیٹ کرے گا */
+    object-fit: cover; /* تصویر کو کراپ کرکے برابر سائز میں دکھائے گا */
+    border-radius: 10px; /* تصویر کے کنارے تھوڑے گول کرنے کے لیے */
+}
+.menu-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.menu-img:hover {
+    transform: scale(1.05);
+}
+form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+.btn-primary {
+    background: #ff5733;
+    border: none;
+}
+.btn-primary:hover {
+    background: #c44125;
+}
+.restaurant-interior {
+    background: url('https://cdn.pixabay.com/photo/2017/05/10/21/25/vacation-2302009_1280.jpg') center/cover no-repeat;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 300px;
+    border-radius: 10px;
+}

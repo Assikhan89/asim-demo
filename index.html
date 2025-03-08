@@ -1,1 +1,234 @@
-<p>Hello world</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Restaurant</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- External CSS Link -->
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Restaurant</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   <!-- Home Section with Slider -->
+<section id="home">
+    <div id="restaurantCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="https://cdn.pixabay.com/photo/2022/01/16/16/13/restaurant-6942508_1280.jpg" 
+                     class="d-block w-100" alt="Restaurant Image 1">
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2017/08/07/07/18/table-2600954_1280.jpg" 
+                     class="d-block w-100" alt="Restaurant Image 2">
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2021/11/29/15/07/chicken-6832808_1280.jpg" 
+                     class="d-block w-100" alt="Restaurant Image 3">
+            </div>
+        </div>
+        <!-- Carousel Controls (Previous & Next Buttons) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+        <br>
+    </div>
+</section>
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2>About Us</h2>
+              <p>Welcome to XYZ Restaurant, where we serve the most delicious and freshly made dishes. Established in 2005, we have been dedicated to providing top-quality food with a unique taste.</p>
+              <p><strong>🏆 Awarded Best Restaurant of 2023!</strong></p>
+              <h4>Chef’s Special 🍲</h4>
+              <p>Our Signature Chicken Biryani is a must-try, made with fresh ingredients and secret spices.</p>
+            </div>
+            <div class="col-md-10">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSobvimtzpqrIee7fVumEiluGa-cpilZegOaQ&s">
+            </div>
+          </div>
+      
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <h3>Customer Reviews 🗣️</h3>
+              <div class="card p-3">
+                <p>“Best food in town! Amazing service and great ambiance.” – Ali Khan</p>
+              </div>
+              <div class="card p-3 mt-2">
+                <p>“I love their BBQ Platter. Highly recommended!” – Sara Ahmed</p>
+              </div>
+            </div>
+      
+            <div class="col-md-6">
+              <h3>Visit Us 📍</h3>
+              <p><strong>Address:</strong> 123 Food Street, Karachi, Pakistan</p>
+              <p><strong>Call Us:</strong> +92 300 1234567</p>
+            </div>
+          </div>
+        </div>
+      </section>      
+    <!-- Menu Section -->
+        
+        <section id="menu" class="text-center py-5">
+            <div class="container">
+                <h2>Our Menu</h2>
+                <p>Explore our variety of delicious dishes.</p>
+            </div>
+        </section>
+    
+        <!-- Image Section -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"><img src="https://cdn.pixabay.com/photo/2020/03/15/23/05/momos-4935232_1280.jpg" class="menu-img" alt="Food Image"></div>
+                <div class="col-md-4"><img src="https://cdn.pixabay.com/photo/2015/05/07/15/08/cookie-756601_1280.jpg" class="menu-img" alt="Food Image"></div>
+                <div class="col-md-4"><img src="https://cdn.pixabay.com/photo/2017/11/25/17/17/sandwich-2977251_1280.jpg" class="menu-img" alt="Food Image"></div>
+            </div>
+    
+            <div class="row mt-3">
+                <div class="col-md-4"><img src="https://cdn.pixabay.com/photo/2014/04/22/02/56/pizza-329523_1280.jpg" class="menu-img" alt="Food Image"></div>
+                <div class="col-md-4"><img src="https://cdn.pixabay.com/photo/2023/08/15/14/36/fruit-8192071_1280.jpg" class="menu-img" alt="Food Image"></div>
+                <div class="col-md-4"><img src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_1280.jpg" class="menu-img" alt="Food Image"></div>
+            </div>
+        </div>
+    
+        <!-- Menu Sections -->
+        <div class="container">
+            <div class="menu-section">
+                <h2>Starters/Appetizers</h2>
+                <ul>
+                    <li>Chicken Wings</li>
+                    <li>French Fries</li>
+                    <li>Garlic Bread</li>
+                </ul>
+            </div>
+    
+            <div class="menu-section">
+                <h2>Main Course</h2>
+                <ul>
+                    <li>Biryani</li>
+                    <li>Karahi</li>
+                    <li>Handi</li>
+                    <li>Burgers, Pizza, Sandwiches</li>
+                </ul>
+            </div>
+    
+            <div class="menu-section">
+                <h2>BBQ Items</h2>
+                <ul>
+                    <li>Chicken Tikka</li>
+                    <li>Seekh Kabab</li>
+                    <li>Malai Boti</li>
+                </ul>
+            </div>
+    
+            <div class="menu-section">
+                <h2>Drinks & Beverages</h2>
+                <ul>
+                    <li>Soft Drinks</li>
+                    <li>Fresh Juices</li>
+                    <li>Lassi</li>
+                </ul>
+            </div>
+    
+            <div class="menu-section">
+                <h2>Desserts</h2>
+                <ul>
+                    <li>Kheer</li>
+                    <li>Gulab Jamun</li>
+                    <li>Chocolate Brownie</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    </html>
+    <!-- Gallery Section -->
+<!-- Restaurant Gallery Section -->
+<div class="container text-center">
+    <h2 class="mb-4">Restaurant Gallery</h2>
+<div id="gallery" class="container text-center">
+    <div class="row">
+        <div class="col-md-3"><img src="https://cdn.pixabay.com/photo/2016/06/06/18/29/meat-skewer-1440105_1280.jpg" class="menu-img" alt="Delicious Food">
+        <h3>Meat Grilling</h3></div>
+        <div class="col-md-3"><img src="https://cdn.pixabay.com/photo/2015/09/04/22/45/skewer-922856_1280.jpg" class="menu-img" alt="Tasty Cookie"><h3>Steak Grill Veg</h3></div>
+        <div class="col-md-3"><img src="https://cdn.pixabay.com/photo/2023/10/09/04/28/steak-8303237_1280.jpg" class="menu-img" alt="Yummy Sandwich"><h3>Steak BBQ</h3></div>
+        <div class="col-md-3"><img src="https://cdn.pixabay.com/photo/2017/02/17/10/45/fish-2073798_1280.jpg" class="menu-img" alt="Delicious Burger"><h3>Fish Grilled</h3></div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-3"><img src="https://cdn.pixabay.com/photo/2017/01/15/14/26/barbeque-1981640_1280.jpg" class="menu-img" alt="Pizza Slice"><h3>Pletter BBQ</h3></div>
+        <div class="col-md-3"><img src="https://cdn.pixabay.com/photo/2019/07/08/06/41/fire-4323960_1280.jpg" class="menu-img" alt="Coffee Time"><h3>Fire Grill</h3></div>
+        <div class="col-md-3"><img src="https://cdn.pixabay.com/photo/2017/10/06/16/33/bbq-2823726_1280.jpg" class="menu-img" alt="Restaurant Interior"><h3>Chicken Grilled</h3></div>
+        <div class="col-md-3"><img src="https://cdn.pixabay.com/photo/2019/11/14/11/14/food-4625940_1280.jpg" class="menu-img" alt="Chefs Cooking"><h3>Food Meat</h3></div>
+    </div>
+</div>
+<!-- Contact Us Section -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+<div id="contact" class="container mt-5">
+    <div class="row">
+        <!-- Contact Form -->
+        <div class="col-md-6">
+            <h4>Get in Touch</h4>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Your Phone</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Write your message..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Google Map -->
+        <div class="col-md-6">
+            <h4>Find Us Here</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.509605202209!2d67.02142377520035!3d24.860734845428606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f1a7486b7b5%3A0x5d4b789a3b72cd8e!2sKarachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1709999999999" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+     <!-- inteior -->
+    <div class="restaurant-interior">
+        <div class="overlay">
+            <h4>Our Beautiful Interior</h4>
+        </div>
+    </div>    
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
